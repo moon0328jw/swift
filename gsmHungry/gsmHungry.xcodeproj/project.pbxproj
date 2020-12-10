@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043F7903257DB989000FF0B1 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F7902257DB989000FF0B1 /* MealViewController.swift */; };
+		04694073257DCBA000D76EAF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694072257DCBA000D76EAF /* TabBarViewController.swift */; };
+		04694076257DF92500D76EAF /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694075257DF92500D76EAF /* MealModel.swift */; };
+		047D2EF225766816000870FF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D2EF125766816000870FF /* ProfileViewController.swift */; };
+		049B33302576512A00C4D035 /* SideMenuListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B332F2576512A00C4D035 /* SideMenuListController.swift */; };
+		049B33342576522A00C4D035 /* BulletinBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B33332576522A00C4D035 /* BulletinBoardViewController.swift */; };
+		049D3C7725780AF200FD9DC3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 049D3C7625780AF200FD9DC3 /* Alamofire */; };
+		049D3C7A25780BC200FD9DC3 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D3C7925780BC200FD9DC3 /* ProfileModel.swift */; };
+		04E64AB12570D9DF0057F998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E64AB02570D9DF0057F998 /* AppDelegate.swift */; };
+		04E64AB32570D9DF0057F998 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E64AB22570D9DF0057F998 /* SceneDelegate.swift */; };
+		04E64AB82570D9DF0057F998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E64AB62570D9DF0057F998 /* Main.storyboard */; };
+		04E64ABB2570D9DF0057F998 /* gsmHungry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04E64AB92570D9DF0057F998 /* gsmHungry.xcdatamodeld */; };
+		04E64ABD2570D9DF0057F998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E64ABC2570D9DF0057F998 /* Assets.xcassets */; };
+		04E64AC02570D9DF0057F998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E64ABE2570D9DF0057F998 /* LaunchScreen.storyboard */; };
+		04E64AD02570DD2B0057F998 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E64ACF2570DD2B0057F998 /* MemoViewController.swift */; };
+		04E64AD52570DD750057F998 /* LoginViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E64AD42570DD750057F998 /* LoginViewContoller.swift */; };
+		04E64AD82570DD850057F998 /* SignupViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E64AD72570DD850057F998 /* SignupViewContoller.swift */; };
+		CA4DDDBB3553EEE2344A547D /* Pods_gsmHungry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2A3963E1E04E033083B3F3 /* Pods_gsmHungry.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		043F7902257DB989000FF0B1 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
+		04694072257DCBA000D76EAF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		04694075257DF92500D76EAF /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
+		047D2EF125766816000870FF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		049B332F2576512A00C4D035 /* SideMenuListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuListController.swift; sourceTree = "<group>"; };
+		049B33332576522A00C4D035 /* BulletinBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinBoardViewController.swift; sourceTree = "<group>"; };
+		049D3C7925780BC200FD9DC3 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		04E64AAD2570D9DF0057F998 /* gsmHungry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gsmHungry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E64AB02570D9DF0057F998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04E64AB22570D9DF0057F998 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04E64AB72570D9DF0057F998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04E64ABA2570D9DF0057F998 /* gsmHungry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = gsmHungry.xcdatamodel; sourceTree = "<group>"; };
+		04E64ABC2570D9DF0057F998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04E64ABF2570D9DF0057F998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04E64AC12570D9DF0057F998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E64ACF2570DD2B0057F998 /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		04E64AD42570DD750057F998 /* LoginViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewContoller.swift; sourceTree = "<group>"; };
+		04E64AD72570DD850057F998 /* SignupViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewContoller.swift; sourceTree = "<group>"; };
+		14A47A85A6F4D9705B384D02 /* Pods-gsmHungry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gsmHungry.release.xcconfig"; path = "Target Support Files/Pods-gsmHungry/Pods-gsmHungry.release.xcconfig"; sourceTree = "<group>"; };
+		3A2A3963E1E04E033083B3F3 /* Pods_gsmHungry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gsmHungry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6D57698558A50FC84B54B12 /* Pods-gsmHungry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gsmHungry.debug.xcconfig"; path = "Target Support Files/Pods-gsmHungry/Pods-gsmHungry.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04E64AAA2570D9DE0057F998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4DDDBB3553EEE2344A547D /* Pods_gsmHungry.framework in Frameworks */,
+				049D3C7725780AF200FD9DC3 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E64AA42570D9DE0057F998 = {
+			isa = PBXGroup;
+			children = (
+				04E64AAF2570D9DF0057F998 /* gsmHungry */,
+				04E64AAE2570D9DF0057F998 /* Products */,
+				FA264F57DFBE86FCF3F8C373 /* Pods */,
+				5175A298C3A6A6A4B58D50BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04E64AAE2570D9DF0057F998 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04E64AAD2570D9DF0057F998 /* gsmHungry.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04E64AAF2570D9DF0057F998 /* gsmHungry */ = {
+			isa = PBXGroup;
+			children = (
+				04E64AB02570D9DF0057F998 /* AppDelegate.swift */,
+				04E64AB22570D9DF0057F998 /* SceneDelegate.swift */,
+				04E64AB62570D9DF0057F998 /* Main.storyboard */,
+				04694072257DCBA000D76EAF /* TabBarViewController.swift */,
+				049B332F2576512A00C4D035 /* SideMenuListController.swift */,
+				047D2EF125766816000870FF /* ProfileViewController.swift */,
+				049B33332576522A00C4D035 /* BulletinBoardViewController.swift */,
+				043F7902257DB989000FF0B1 /* MealViewController.swift */,
+				04E64ACF2570DD2B0057F998 /* MemoViewController.swift */,
+				04E64AD42570DD750057F998 /* LoginViewContoller.swift */,
+				04E64AD72570DD850057F998 /* SignupViewContoller.swift */,
+				049D3C7925780BC200FD9DC3 /* ProfileModel.swift */,
+				04694075257DF92500D76EAF /* MealModel.swift */,
+				04E64ABC2570D9DF0057F998 /* Assets.xcassets */,
+				04E64ABE2570D9DF0057F998 /* LaunchScreen.storyboard */,
+				04E64AC12570D9DF0057F998 /* Info.plist */,
+				04E64AB92570D9DF0057F998 /* gsmHungry.xcdatamodeld */,
+			);
+			path = gsmHungry;
+			sourceTree = "<group>";
+		};
+		5175A298C3A6A6A4B58D50BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A2A3963E1E04E033083B3F3 /* Pods_gsmHungry.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA264F57DFBE86FCF3F8C373 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6D57698558A50FC84B54B12 /* Pods-gsmHungry.debug.xcconfig */,
+				14A47A85A6F4D9705B384D02 /* Pods-gsmHungry.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04E64AAC2570D9DE0057F998 /* gsmHungry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E64AC42570D9DF0057F998 /* Build configuration list for PBXNativeTarget "gsmHungry" */;
+			buildPhases = (
+				42334D6E767181798FCC7B39 /* [CP] Check Pods Manifest.lock */,
+				04E64AA92570D9DE0057F998 /* Sources */,
+				04E64AAA2570D9DE0057F998 /* Frameworks */,
+				04E64AAB2570D9DE0057F998 /* Resources */,
+				166C5731C020DA21FE4A0019 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gsmHungry;
+			packageProductDependencies = (
+				049D3C7625780AF200FD9DC3 /* Alamofire */,
+			);
+			productName = gsmHungry;
+			productReference = 04E64AAD2570D9DF0057F998 /* gsmHungry.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04E64AA52570D9DE0057F998 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					04E64AAC2570D9DE0057F998 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 04E64AA82570D9DE0057F998 /* Build configuration list for PBXProject "gsmHungry" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04E64AA42570D9DE0057F998;
+			packageReferences = (
+				049D3C7525780AF200FD9DC3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 04E64AAE2570D9DF0057F998 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04E64AAC2570D9DE0057F998 /* gsmHungry */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04E64AAB2570D9DE0057F998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E64AC02570D9DF0057F998 /* LaunchScreen.storyboard in Resources */,
+				04E64ABD2570D9DF0057F998 /* Assets.xcassets in Resources */,
+				04E64AB82570D9DF0057F998 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		166C5731C020DA21FE4A0019 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gsmHungry/Pods-gsmHungry-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gsmHungry/Pods-gsmHungry-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gsmHungry/Pods-gsmHungry-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42334D6E767181798FCC7B39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gsmHungry-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04E64AA92570D9DE0057F998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E64AB12570D9DF0057F998 /* AppDelegate.swift in Sources */,
+				049B33302576512A00C4D035 /* SideMenuListController.swift in Sources */,
+				04E64AD52570DD750057F998 /* LoginViewContoller.swift in Sources */,
+				04E64AD02570DD2B0057F998 /* MemoViewController.swift in Sources */,
+				04694073257DCBA000D76EAF /* TabBarViewController.swift in Sources */,
+				04E64ABB2570D9DF0057F998 /* gsmHungry.xcdatamodeld in Sources */,
+				049D3C7A25780BC200FD9DC3 /* ProfileModel.swift in Sources */,
+				04E64AB32570D9DF0057F998 /* SceneDelegate.swift in Sources */,
+				047D2EF225766816000870FF /* ProfileViewController.swift in Sources */,
+				04694076257DF92500D76EAF /* MealModel.swift in Sources */,
+				049B33342576522A00C4D035 /* BulletinBoardViewController.swift in Sources */,
+				043F7903257DB989000FF0B1 /* MealViewController.swift in Sources */,
+				04E64AD82570DD850057F998 /* SignupViewContoller.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04E64AB62570D9DF0057F998 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E64AB72570D9DF0057F998 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04E64ABE2570D9DF0057F998 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E64ABF2570D9DF0057F998 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04E64AC22570D9DF0057F998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04E64AC32570D9DF0057F998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04E64AC52570D9DF0057F998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6D57698558A50FC84B54B12 /* Pods-gsmHungry.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJW2898BYW;
+				INFOPLIST_FILE = gsmHungry/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.juwon.gsmHungry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04E64AC62570D9DF0057F998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A47A85A6F4D9705B384D02 /* Pods-gsmHungry.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJW2898BYW;
+				INFOPLIST_FILE = gsmHungry/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.juwon.gsmHungry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04E64AA82570D9DE0057F998 /* Build configuration list for PBXProject "gsmHungry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E64AC22570D9DF0057F998 /* Debug */,
+				04E64AC32570D9DF0057F998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E64AC42570D9DF0057F998 /* Build configuration list for PBXNativeTarget "gsmHungry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E64AC52570D9DF0057F998 /* Debug */,
+				04E64AC62570D9DF0057F998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		049D3C7525780AF200FD9DC3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		049D3C7625780AF200FD9DC3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 049D3C7525780AF200FD9DC3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		04E64AB92570D9DF0057F998 /* gsmHungry.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04E64ABA2570D9DF0057F998 /* gsmHungry.xcdatamodel */,
+			);
+			currentVersion = 04E64ABA2570D9DF0057F998 /* gsmHungry.xcdatamodel */;
+			path = gsmHungry.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04E64AA52570D9DE0057F998 /* Project object */;
+}
