@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04024F492582EBA900ECE4F9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04024F472582EBA900ECE4F9 /* Model.xcdatamodeld */; };
 		043F7903257DB989000FF0B1 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F7902257DB989000FF0B1 /* MealViewController.swift */; };
 		04694073257DCBA000D76EAF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694072257DCBA000D76EAF /* TabBarViewController.swift */; };
 		04694076257DF92500D76EAF /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694075257DF92500D76EAF /* MealModel.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04024F482582EBA900ECE4F9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		043F7902257DB989000FF0B1 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		04694072257DCBA000D76EAF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		04694075257DF92500D76EAF /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				04E64AB02570D9DF0057F998 /* AppDelegate.swift */,
+				04024F472582EBA900ECE4F9 /* Model.xcdatamodeld */,
 				04E64AB22570D9DF0057F998 /* SceneDelegate.swift */,
 				04E64AB62570D9DF0057F998 /* Main.storyboard */,
 				04694072257DCBA000D76EAF /* TabBarViewController.swift */,
@@ -246,6 +249,7 @@
 				04E64AB12570D9DF0057F998 /* AppDelegate.swift in Sources */,
 				049B33302576512A00C4D035 /* SideMenuListController.swift in Sources */,
 				04E64AD52570DD750057F998 /* LoginViewContoller.swift in Sources */,
+				04024F492582EBA900ECE4F9 /* Model.xcdatamodeld in Sources */,
 				04E64AD02570DD2B0057F998 /* MemoViewController.swift in Sources */,
 				04694073257DCBA000D76EAF /* TabBarViewController.swift in Sources */,
 				04E64ABB2570D9DF0057F998 /* gsmHungry.xcdatamodeld in Sources */,
@@ -480,6 +484,16 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
+		04024F472582EBA900ECE4F9 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04024F482582EBA900ECE4F9 /* Model.xcdatamodel */,
+			);
+			currentVersion = 04024F482582EBA900ECE4F9 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		04E64AB92570D9DF0057F998 /* gsmHungry.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

@@ -33,6 +33,7 @@ class BulletinBoardViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return 
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BoardCell", for: indexPath)
+        return cell
     }
 }
