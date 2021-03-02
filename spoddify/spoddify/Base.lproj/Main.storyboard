@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -33,6 +34,9 @@
                                 <state key="normal" title="가입하기">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="eUG-KM-4cn" kind="show" id="x94-0Q-e1e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHl-dy-BLw" customClass="AnotherJoinButton" customModule="spoddify" customModuleProvider="target">
                                 <rect key="frame" x="57" y="608" width="300" height="50"/>
@@ -90,11 +94,120 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
         </scene>
+        <!--Birth View Controller-->
+        <scene sceneID="lNd-va-ETM">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="eUG-KM-4cn" customClass="BirthViewController" customModule="spoddify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ML-7O-YLa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HZW-hP-ycN" customClass="BirthTextField" customModule="spoddify" customModuleProvider="target">
+                                <rect key="frame" x="20" y="139" width="374" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdt-Rd-3gJ">
+                                        <rect key="frame" x="8" y="13" width="358" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="dd:" destination="eUG-KM-4cn" eventType="editingChanged" id="r2x-Aw-Deu"/>
+                                            <action selector="touchTextField:" destination="eUG-KM-4cn" eventType="editingDidEnd" id="WYA-xY-vFb"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="생년월일이 언제인가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQF-lR-FlI">
+                                <rect key="frame" x="20" y="104" width="283" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeZ-FA-sh6" customClass="JoinNextButton" customModule="spoddify" customModuleProvider="target">
+                                <rect key="frame" x="127" y="277" width="160" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="다음">
+                                    <color key="titleColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i5l-TN-UCt"/>
+                        <color key="backgroundColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k5T-Uk-qTe"/>
+                    <connections>
+                        <outlet property="birthTextField" destination="fdt-Rd-3gJ" id="OxA-rf-K71"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M08-Ss-Gs4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921.73913043478262" y="115.84821428571428"/>
+        </scene>
+        <!--Birth View Controller-->
+        <scene sceneID="bUc-8d-Qjx">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="awm-YA-bMp" customClass="BirthViewController" customModule="spoddify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PB4-a3-rJ5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8S6-F7-ogD" customClass="BirthTextField" customModule="spoddify" customModuleProvider="target">
+                                <rect key="frame" x="20" y="139" width="374" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nzo-Lr-avp">
+                                        <rect key="frame" x="8" y="13" width="358" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="ddd:" destination="awm-YA-bMp" eventType="touchDown" id="9Nf-kb-Cf8"/>
+                                            <action selector="touchTextField:" destination="awm-YA-bMp" eventType="editingDidEnd" id="UoG-Je-wss"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="생년월일이 언제인가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXO-eS-lVL">
+                                <rect key="frame" x="20" y="104" width="283" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpH-uS-rZm" customClass="JoinNextButton" customModule="spoddify" customModuleProvider="target">
+                                <rect key="frame" x="127" y="277" width="160" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="다음">
+                                    <color key="titleColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BqQ-cx-3BB"/>
+                        <color key="backgroundColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kQj-U0-3KW"/>
+                    <connections>
+                        <outlet property="birthTextField" destination="Nzo-Lr-avp" id="JQr-TE-xCd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RPG-sE-zCw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612" y="116"/>
+        </scene>
     </scenes>
     <resources>
         <image name="clipart347603" width="3346" height="4104"/>
         <image name="iconfinder_social-facebook-2019-circle_4696483" width="512" height="512"/>
         <image name="pngwing.com-3" width="1125" height="1125"/>
         <image name="spotifyLogo" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
