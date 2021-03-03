@@ -17,7 +17,8 @@
 		045255C125DE933700E027A5 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045255C025DE933700E027A5 /* StartViewController.swift */; };
 		045255C425DE9E4200E027A5 /* SpotifyJoinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045255C325DE9E4200E027A5 /* SpotifyJoinButton.swift */; };
 		045255CA25DEA06800E027A5 /* AnotherJoinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045255C925DEA06800E027A5 /* AnotherJoinButton.swift */; };
-		04FA8E7225EE2C2B00CDCB83 /* BirthTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA8E7125EE2C2B00CDCB83 /* BirthTextView.swift */; };
+		04A21C1525EF7EFD004A06A5 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A21C1425EF7EFD004A06A5 /* EmailViewController.swift */; };
+		04FA8E7225EE2C2B00CDCB83 /* BirthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA8E7125EE2C2B00CDCB83 /* BirthTextField.swift */; };
 		04FA8E7925EE2DDD00CDCB83 /* JoinNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA8E7825EE2DDD00CDCB83 /* JoinNextButton.swift */; };
 		04FA8E7C25EE2F5A00CDCB83 /* BirthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA8E7B25EE2F5A00CDCB83 /* BirthViewController.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +36,8 @@
 		045255C025DE933700E027A5 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		045255C325DE9E4200E027A5 /* SpotifyJoinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyJoinButton.swift; sourceTree = "<group>"; };
 		045255C925DEA06800E027A5 /* AnotherJoinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherJoinButton.swift; sourceTree = "<group>"; };
-		04FA8E7125EE2C2B00CDCB83 /* BirthTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthTextView.swift; sourceTree = "<group>"; };
+		04A21C1425EF7EFD004A06A5 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		04FA8E7125EE2C2B00CDCB83 /* BirthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthTextField.swift; sourceTree = "<group>"; };
 		04FA8E7825EE2DDD00CDCB83 /* JoinNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNextButton.swift; sourceTree = "<group>"; };
 		04FA8E7B25EE2F5A00CDCB83 /* BirthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,9 +76,10 @@
 				045255AA25DE926800E027A5 /* SceneDelegate.swift */,
 				045255AC25DE926800E027A5 /* ViewController.swift */,
 				045255AE25DE926800E027A5 /* Main.storyboard */,
+				04A21C1425EF7EFD004A06A5 /* EmailViewController.swift */,
 				04FA8E7B25EE2F5A00CDCB83 /* BirthViewController.swift */,
 				04FA8E7825EE2DDD00CDCB83 /* JoinNextButton.swift */,
-				04FA8E7125EE2C2B00CDCB83 /* BirthTextView.swift */,
+				04FA8E7125EE2C2B00CDCB83 /* BirthTextField.swift */,
 				045255B425DE926900E027A5 /* Assets.xcassets */,
 				045255B625DE926900E027A5 /* LaunchScreen.storyboard */,
 				045255B925DE926900E027A5 /* Info.plist */,
@@ -167,7 +170,8 @@
 				045255AB25DE926800E027A5 /* SceneDelegate.swift in Sources */,
 				045255B325DE926800E027A5 /* spoddify.xcdatamodeld in Sources */,
 				045255CA25DEA06800E027A5 /* AnotherJoinButton.swift in Sources */,
-				04FA8E7225EE2C2B00CDCB83 /* BirthTextView.swift in Sources */,
+				04A21C1525EF7EFD004A06A5 /* EmailViewController.swift in Sources */,
+				04FA8E7225EE2C2B00CDCB83 /* BirthTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

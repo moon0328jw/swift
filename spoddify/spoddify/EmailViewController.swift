@@ -1,29 +1,26 @@
 //
-//  StartViewController.swift
+//  EmailViewController.swift
 //  spoddify
 //
-//  Created by 문주원 on 2021/02/18.
+//  Created by 문주원 on 2021/03/03.
 //
 
 import UIKit
 
-class StartViewController: UIViewController {
+class EmailViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelText()
         
         // Do any additional setup after loading the view.
     }
-    func labelText() {
-        let titleText: String = "내 마음에 꼭 드는 또 다른\n플레이리스트를\n발견해보세요."
-        titleLabel.numberOfLines = 3
-        titleLabel.text = titleText
-    }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(animated)
+            
+            navigationController?.navigationBar.barStyle = .black
+        }
     /*
     // MARK: - Navigation
 
