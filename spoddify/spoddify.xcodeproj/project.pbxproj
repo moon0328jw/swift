@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		045255A925DE926800E027A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045255A825DE926800E027A5 /* AppDelegate.swift */; };
 		045255AB25DE926800E027A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045255AA25DE926800E027A5 /* SceneDelegate.swift */; };
-		045255AD25DE926800E027A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045255AC25DE926800E027A5 /* ViewController.swift */; };
 		045255B025DE926800E027A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045255AE25DE926800E027A5 /* Main.storyboard */; };
 		045255B325DE926800E027A5 /* spoddify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 045255B125DE926800E027A5 /* spoddify.xcdatamodeld */; };
 		045255B525DE926900E027A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045255B425DE926900E027A5 /* Assets.xcassets */; };
@@ -27,7 +26,6 @@
 		045255A525DE926800E027A5 /* spoddify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spoddify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045255A825DE926800E027A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045255AA25DE926800E027A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		045255AC25DE926800E027A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		045255AF25DE926800E027A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		045255B225DE926800E027A5 /* spoddify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = spoddify.xcdatamodel; sourceTree = "<group>"; };
 		045255B425DE926900E027A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,23 +70,38 @@
 		045255A725DE926800E027A5 /* spoddify */ = {
 			isa = PBXGroup;
 			children = (
+				049599D225F9BF6200DDE276 /* controller */,
+				049599D125F9BEE300DDE276 /* design */,
 				045255A825DE926800E027A5 /* AppDelegate.swift */,
 				045255AA25DE926800E027A5 /* SceneDelegate.swift */,
-				045255AC25DE926800E027A5 /* ViewController.swift */,
 				045255AE25DE926800E027A5 /* Main.storyboard */,
-				04A21C1425EF7EFD004A06A5 /* EmailViewController.swift */,
-				04FA8E7B25EE2F5A00CDCB83 /* BirthViewController.swift */,
-				04FA8E7825EE2DDD00CDCB83 /* JoinNextButton.swift */,
-				04FA8E7125EE2C2B00CDCB83 /* BirthTextField.swift */,
 				045255B425DE926900E027A5 /* Assets.xcassets */,
 				045255B625DE926900E027A5 /* LaunchScreen.storyboard */,
 				045255B925DE926900E027A5 /* Info.plist */,
 				045255B125DE926800E027A5 /* spoddify.xcdatamodeld */,
-				045255C025DE933700E027A5 /* StartViewController.swift */,
-				045255C325DE9E4200E027A5 /* SpotifyJoinButton.swift */,
-				045255C925DEA06800E027A5 /* AnotherJoinButton.swift */,
 			);
 			path = spoddify;
+			sourceTree = "<group>";
+		};
+		049599D125F9BEE300DDE276 /* design */ = {
+			isa = PBXGroup;
+			children = (
+				04FA8E7125EE2C2B00CDCB83 /* BirthTextField.swift */,
+				045255C925DEA06800E027A5 /* AnotherJoinButton.swift */,
+				045255C325DE9E4200E027A5 /* SpotifyJoinButton.swift */,
+				04FA8E7825EE2DDD00CDCB83 /* JoinNextButton.swift */,
+			);
+			path = design;
+			sourceTree = "<group>";
+		};
+		049599D225F9BF6200DDE276 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				045255C025DE933700E027A5 /* StartViewController.swift */,
+				04A21C1425EF7EFD004A06A5 /* EmailViewController.swift */,
+				04FA8E7B25EE2F5A00CDCB83 /* BirthViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +177,6 @@
 				04FA8E7925EE2DDD00CDCB83 /* JoinNextButton.swift in Sources */,
 				045255C425DE9E4200E027A5 /* SpotifyJoinButton.swift in Sources */,
 				045255C125DE933700E027A5 /* StartViewController.swift in Sources */,
-				045255AD25DE926800E027A5 /* ViewController.swift in Sources */,
 				04FA8E7C25EE2F5A00CDCB83 /* BirthViewController.swift in Sources */,
 				045255A925DE926800E027A5 /* AppDelegate.swift in Sources */,
 				045255AB25DE926800E027A5 /* SceneDelegate.swift in Sources */,
