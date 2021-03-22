@@ -15,16 +15,17 @@ class EmailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         // Do any additional setup after loading the view.
     }
     
     @IBAction func nextButton(_ sender: Any) {
         if isValidEmail(testStr: emailText.text!) == false {
-            emailCheckText.text = "이 이메일은 유효하지 않습니다. example@email.com과 같은\n형식인지 확인하세요."
+            emailCheckText.text = "이 이메일은 유효하지 않습니다. example@email.com과 같은 형식인지 확인하세요."
             emailText.textColor = UIColor.red
         } else {
-            guard let nextVC = self.storyboard?.instantiateViewController(identifier: "birth") as? BirthViewController else {return}
+            guard let nextVC = self.storyboard?.instantiateViewController(identifier: "pwd") as? PwdViewController else {return}
             self.navigationController?.pushViewController(nextVC, animated: true)
         }
     }

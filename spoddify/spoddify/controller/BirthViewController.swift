@@ -22,6 +22,7 @@ class BirthViewController: UIViewController {
     
     func createDatePicker() {
         //format for picker
+        datePicker.maximumDate = Date()
         birthTextField.textAlignment = .center
         //toolbar
         let toolbar = UIToolbar()
@@ -41,11 +42,17 @@ class BirthViewController: UIViewController {
     @objc func donePressed(sender: UIButton) {
         //format date
         let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
+        dateFormatter.dateStyle = .long
         dateFormatter.timeStyle = .none
-        dateFormatter.dateFormat = "yyyy년 mm월 dd일"
+        dateFormatter.dateFormat = "yyyy년 MM월 dd일"
         birthTextField.text = dateFormatter.string(from: datePicker.date)
         self.view.endEditing(true)
+        
+        
+        var date1 = Date()
+        date1.addTimeInterval(300)
+        print(date1)
+        print(datePicker.date)
     }
     
     
