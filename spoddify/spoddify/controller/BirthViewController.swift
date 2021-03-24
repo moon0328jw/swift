@@ -48,13 +48,16 @@ class BirthViewController: UIViewController {
         birthTextField.text = dateFormatter.string(from: datePicker.date)
         self.view.endEditing(true)
         
-        
         var date1 = Date()
         date1.addTimeInterval(300)
         print(date1)
         print(datePicker.date)
     }
     
+    @IBAction func nextButton(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+        SceneDelegate.scene(SceneDelegate)
+    }
     
     /*
     // MARK: - Navigation

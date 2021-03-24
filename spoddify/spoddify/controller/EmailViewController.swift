@@ -22,7 +22,10 @@ class EmailViewController: UIViewController {
     
     @IBAction func nextButton(_ sender: Any) {
         if isValidEmail(testStr: emailText.text!) == false {
-            emailCheckText.text = "이 이메일은 유효하지 않습니다. example@email.com과 같은 형식인지 확인하세요."
+            emailCheckText.frame.size.height = 40.0
+            let titleText: String = "이 이메일은 유효하지 않습니다. example@email.com과 같은 형식인지 확인하세요."
+            emailCheckText.numberOfLines = 2
+            emailCheckText.text = titleText
             emailText.textColor = UIColor.red
         } else {
             guard let nextVC = self.storyboard?.instantiateViewController(identifier: "pwd") as? PwdViewController else {return}

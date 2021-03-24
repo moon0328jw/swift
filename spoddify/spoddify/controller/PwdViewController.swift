@@ -15,13 +15,16 @@ class PwdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         // Do any additional setup after loading the view.
     }
     
     @IBAction func nextButton(_ sender: Any) {
         if isValidPwd(testStr: pwdText.text!) == false {
-            pwdCheckText.text = "이 비밀번호는 유효하지 않습니다. 숫자,문자를 포함해서 8~20글자 사이인지 확인하세요."
+            let titleText: String = "이 비밀번호는 유효하지 않습니다. 숫자,문자를 포함해서 8~20글자 사이인지 확인하세요."
+            pwdCheckText.numberOfLines = 2
+            pwdCheckText.text = titleText
             pwdText.textColor = UIColor.red
         } else {
             guard let nextVC = self.storyboard?.instantiateViewController(identifier: "birth") as? BirthViewController else {return}
