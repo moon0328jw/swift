@@ -17,14 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
         
-            // Instantiate UIWindow with scene
-            let window = UIWindow(windowScene: scene)
-            // Assign window to SceneDelegate window property
-            self.window = window
-            // Set initial view controller from Main storyboard as root view controller of UIWindow
-            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "email")
-            // Present window to screen
-            self.window?.makeKeyAndVisible()
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -57,5 +50,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
+    
+    func switchIntro() {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "IntroViewController")
+            let nvc = UINavigationController(rootViewController: vc)
+            
+            self.window?.rootViewController = nvc
+            window?.makeKeyAndVisible()
+        }
+    
+    func switchMain() {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController")
+            let nvc = UINavigationController(rootViewController: vc)
+            
+            self.window?.rootViewController = nvc
+            window?.makeKeyAndVisible()
+        }
 }
 

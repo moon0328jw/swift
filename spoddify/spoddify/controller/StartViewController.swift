@@ -9,10 +9,15 @@ import UIKit
 
 class StartViewController: UIViewController {
 
+    let userEmail = "moon0328jw@gmail.com"
+    let userPwd = "qwer1234"
+    
     @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        autoLogin()
         
         naviModify()
         
@@ -35,6 +40,14 @@ class StartViewController: UIViewController {
         backBarButtonItem.tintColor = .white
 
         self.navigationItem.backBarButtonItem = backBarButtonItem
+    }
+    
+    func autoLogin() {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "naviMain")
+        UIApplication.shared.windows.first?.rootViewController = viewController
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
+        navigationController?.popToRootViewController(animated: true)
     }
 
     /*

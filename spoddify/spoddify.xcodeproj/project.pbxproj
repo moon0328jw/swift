@@ -18,6 +18,8 @@
 		045255CA25DEA06800E027A5 /* AnotherJoinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045255C925DEA06800E027A5 /* AnotherJoinButton.swift */; };
 		04A1FB8F2602D2B6007D5097 /* PwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1FB8E2602D2B6007D5097 /* PwdViewController.swift */; };
 		04A21C1525EF7EFD004A06A5 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A21C1425EF7EFD004A06A5 /* EmailViewController.swift */; };
+		04C355F326117FD60009D39B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C355F226117FD60009D39B /* MainViewController.swift */; };
+		04E56410260C2C1600A3CC40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5640F260C2C1600A3CC40 /* LoginViewController.swift */; };
 		04FA8E7225EE2C2B00CDCB83 /* BirthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA8E7125EE2C2B00CDCB83 /* BirthTextField.swift */; };
 		04FA8E7925EE2DDD00CDCB83 /* JoinNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA8E7825EE2DDD00CDCB83 /* JoinNextButton.swift */; };
 		04FA8E7C25EE2F5A00CDCB83 /* BirthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA8E7B25EE2F5A00CDCB83 /* BirthViewController.swift */; };
@@ -37,6 +39,8 @@
 		045255C925DEA06800E027A5 /* AnotherJoinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherJoinButton.swift; sourceTree = "<group>"; };
 		04A1FB8E2602D2B6007D5097 /* PwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PwdViewController.swift; sourceTree = "<group>"; };
 		04A21C1425EF7EFD004A06A5 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		04C355F226117FD60009D39B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		04E5640F260C2C1600A3CC40 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04FA8E7125EE2C2B00CDCB83 /* BirthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthTextField.swift; sourceTree = "<group>"; };
 		04FA8E7825EE2DDD00CDCB83 /* JoinNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNextButton.swift; sourceTree = "<group>"; };
 		04FA8E7B25EE2F5A00CDCB83 /* BirthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				04A21C1425EF7EFD004A06A5 /* EmailViewController.swift */,
 				04FA8E7B25EE2F5A00CDCB83 /* BirthViewController.swift */,
 				04A1FB8E2602D2B6007D5097 /* PwdViewController.swift */,
+				04E5640F260C2C1600A3CC40 /* LoginViewController.swift */,
+				04C355F226117FD60009D39B /* MainViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -177,6 +183,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E56410260C2C1600A3CC40 /* LoginViewController.swift in Sources */,
+				04C355F326117FD60009D39B /* MainViewController.swift in Sources */,
 				04FA8E7925EE2DDD00CDCB83 /* JoinNextButton.swift in Sources */,
 				045255C425DE9E4200E027A5 /* SpotifyJoinButton.swift in Sources */,
 				045255C125DE933700E027A5 /* StartViewController.swift in Sources */,

@@ -28,6 +28,8 @@ class EmailViewController: UIViewController {
             emailCheckText.text = titleText
             emailText.textColor = UIColor.red
         } else {
+            UserDefaults.standard.set(emailText.text, forKey: "email")
+            print("email userDefaults set")
             guard let nextVC = self.storyboard?.instantiateViewController(identifier: "pwd") as? PwdViewController else {return}
             self.navigationController?.pushViewController(nextVC, animated: true)
         }
