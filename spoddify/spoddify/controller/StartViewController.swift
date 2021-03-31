@@ -8,9 +8,6 @@
 import UIKit
 
 class StartViewController: UIViewController {
-
-    let userEmail = "moon0328jw@gmail.com"
-    let userPwd = "qwer1234"
     
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -43,11 +40,19 @@ class StartViewController: UIViewController {
     }
     
     func autoLogin() {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "naviMain")
-        UIApplication.shared.windows.first?.rootViewController = viewController
-        UIApplication.shared.windows.first?.makeKeyAndVisible()
-        navigationController?.popToRootViewController(animated: true)
+        if let email = UserDefaults.standard.string(forKey: "email") {
+            if email.isEmpty {
+                    print("userDefaults is empty")
+                } else {
+                    print("userDefaults is not empty, \(email)")
+                    let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let viewController = mainStoryboard.instantiateViewController(withIdentifier: "naviMain")
+                    UIApplication.shared.windows.first?.rootViewController = viewController
+                    UIApplication.shared.windows.first?.makeKeyAndVisible()
+                    navigationController?.popToRootViewController(animated: true)
+                }
+        } else {
+        }
     }
 
     /*

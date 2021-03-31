@@ -55,8 +55,6 @@ class BirthViewController: UIViewController {
     }
     
     @IBAction func nextButton(_ sender: Any) {
-        UserDefaults.standard.set(birthTextField.text, forKey: "birth")
-        print("birthday userDefaults set")
         navigationController?.popToRootViewController(animated: true)
     }
     

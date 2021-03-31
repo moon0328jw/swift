@@ -19,6 +19,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func nextButton(_ sender: Any) {
+        UserDefaults.standard.set(loginEmail.text, forKey: "email")
+        print("email userDefaults set")
+        UserDefaults.standard.set(loginPwd.text, forKey: "pwd")
+        print("pwd userDefaults set")
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = mainStoryboard.instantiateViewController(withIdentifier: "naviMain")
         UIApplication.shared.windows.first?.rootViewController = viewController

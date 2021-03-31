@@ -101,6 +101,7 @@
         <!--Birth View Controller-->
         <scene sceneID="lNd-va-ETM">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M08-Ss-Gs4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="birth" modalPresentationStyle="fullScreen" id="eUG-KM-4cn" customClass="BirthViewController" customModule="spoddify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0ML-7O-YLa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -146,7 +147,6 @@
                         <outlet property="birthTextField" destination="fdt-Rd-3gJ" id="OxA-rf-K71"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M08-Ss-Gs4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5243" y="116"/>
         </scene>
@@ -245,7 +245,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -326,7 +326,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -381,6 +381,9 @@
                                 <rect key="frame" x="182" y="475" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="LogOut"/>
+                                <connections>
+                                    <action selector="logoutButton:" destination="AfQ-WD-Pa6" eventType="touchUpInside" id="YhJ-8f-D42"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AFs-RJ-SRN"/>

@@ -15,7 +15,10 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func logoutButton(_ sender: Any) {let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    @IBAction func logoutButton(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "email")
+        UserDefaults.standard.removeObject(forKey: "pwd")
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = mainStoryboard.instantiateViewController(withIdentifier: "naviLogin")
         UIApplication.shared.windows.first?.rootViewController = viewController
         UIApplication.shared.windows.first?.makeKeyAndVisible()

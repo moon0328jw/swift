@@ -27,8 +27,6 @@ class PwdViewController: UIViewController {
             pwdCheckText.text = titleText
             pwdText.textColor = UIColor.red
         } else {
-            UserDefaults.standard.set(pwdText.text, forKey: "pwd")
-            print("pwd userDefaults set")
             guard let nextVC = self.storyboard?.instantiateViewController(identifier: "birth") as? BirthViewController else {return}
             self.navigationController?.pushViewController(nextVC, animated: true)
         }
