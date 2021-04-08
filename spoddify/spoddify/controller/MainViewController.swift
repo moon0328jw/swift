@@ -6,15 +6,24 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let loginButton = FBLoginButton()
+        loginButton.center = view.center
+        view.addSubview(loginButton)
+        
+        if let token = AccessToken.current, !token.isExpired {}
+        
+        loginButton.permissions = ["public_profile", "email"]
+ 
         // Do any additional setup after loading the view.
     }
-    
+
     @IBAction func logoutButton(_ sender: Any) {
         UserDefaults.standard.removeObject(forKey: "email")
         UserDefaults.standard.removeObject(forKey: "pwd")
